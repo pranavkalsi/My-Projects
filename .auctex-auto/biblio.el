@@ -4,6 +4,6 @@
  "biblio"
  (lambda ()
    (LaTeX-add-bibitems
-    "joshi20_photom_kinem_variab_study_young"))
+    "pandey09_air_borne_heavy_metal_contam"))
  '(or :bibtex :latex))
 

@@ -1,25 +1,29 @@
 #+title: Project Reading
 #+AUTHOR: Pranav Kalsi
-#+BIBLIOGRAPHY: biblio.bib
+#+BIBLIOGRAPHY: Papers/biblio.bib
+Last modified: [2025-05-10 Sat]
 This file contains the important and relevant things from the reading resources for the project. It also contains doubts which are unresolved.
-Last edited: [2025-05-10 Sat] 
+
+Project progress is maintained here [[file:Progress.org][Progress]].
+Communication with professor and personal goals is maintained here [[file:Project_update.org][Project_Updates]].
 * Converging point method
 The method is beautifully explained in this website: https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html.
-    
 * Reading Paper:
-
-** 4. Membership determination:
-    Using Gaia DR2, data proper-motion is plotted as Vector Point Diagram (VPD). And the cluster members are assigned by chosing   stars which form a dense cluster of points in VPD.
-    #+BEGIN_QUOTE
-    The centre of the circular region confining the
-probable cluster members was determined by maximum density
-method in the proper motion plane which is found to lie at (μx , μy )
-≡ (μα cosθ, μδ ) ≈ (−0.13, −3.37) mas yr−1 .
-The radius of the circle
-was derived by plotting the stellar density as a function of radial
-distance in the proper motion plane as illustrated in Fig. 2. We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
-    #+END_QUOTE
-*** Membership probability
+** [[file:Papers/Joshi_2020_MNRAS_492_3602.pdf][Photometric, kinematic, and variability study in the young open cluster NGC 1960]] [cite:@joshi20_photom_kinem_variab_study_young] 
+*** Membership determination (Section 4):
+This section of the paper focuses on the determining the membership probability of a star in the image field, by assuming a few confirmed cluster members.
+In general an image will have stars from clusters and foreground as well as background.
+Using Gaia DR2, data proper-motion is plotted as Vector Point Diagram (VPD). And the cluster members are assigned by chosing stars which form a dense cluster of points in VPD.
+     #+BEGIN_QUOTE 
+    [fn:1] The centre of the circular region confining the
+ probable cluster members was determined by maximum density
+ method in the proper motion plane which is found to lie at (μx , μy )
+ ≡ (μα cosθ, μδ ) ≈ (−0.13, −3.37) mas yr−1 .
+ The radius of the circle
+ was derived by plotting the stellar density as a function of radial
+ distance in the proper motion plane as illustrated in Fig. 2. We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
+     #+END_QUOTE
+     *Membership probability*  
 #+begin_quote
 \[
 P_\mu(i) = \frac{n_c \cdot \phi^v_c(i)}{n_c \cdot \phi^v_c(i) + n_f \cdot \phi^v_f(i)}
@@ -40,4 +44,7 @@ P_\mu(i) = \frac{n_c \cdot \phi^v_c(i)}{n_c \cdot \phi^v_c(i) + n_f \cdot \phi^v
 \]
 
 #+end_quote
-
+*Parallax criteria on membership selection*
+By measuring the parallax of the stars, we further constrain the cluster members by eliminating all those stars whose parallax is 3\sigma away from the mean cluster parallax, which is a gaussian. 
+* Footnotes
+[fn:1] Reffering to figure 1 in [cite:@joshi20_photom_kinem_variab_study_young]. 

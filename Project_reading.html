@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-10 Sat 06:14 -->
+<!-- 2025-05-11 Sun 02:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Project Reading</title>
-<meta name="author" content="Pranav Kals" />
+<meta name="author" content="Pranav Kalsi" />
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -233,12 +233,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbb48a12">1. Converging point method</a></li>
-<li><a href="#orgdac1bbf">2. Reading Paper:</a>
+<li><a href="#orge6af534">1. Converging point method</a></li>
+<li><a href="#org6282d34">2. Reading Paper:</a>
 <ul>
-<li><a href="#orgf440315">2.1. 4. Membership determination:</a>
+<li><a href="#org81abfec">2.1. Photometric, kinematic, and variability study in the young open cluster NGC 1960 </a>
 <ul>
-<li><a href="#org5625097">2.1.1. Membership probability</a></li>
+<li><a href="#org8fc16d8">2.1.1. Membership determination (Section 4):</a></li>
 </ul>
 </li>
 </ul>
@@ -247,26 +247,34 @@
 </div>
 </div>
 <p>
+Last modified: <span class="timestamp-wrapper"><span class="timestamp">[2025-05-10 Sat]</span></span>
 This file contains the important and relevant things from the reading resources for the project. It also contains doubts which are unresolved.
-Last edited: <span class="timestamp-wrapper"><span class="timestamp">[2025-05-10 Sat] </span></span> 
 </p>
-<div id="outline-container-orgbb48a12" class="outline-2">
-<h2 id="orgbb48a12"><span class="section-number-2">1.</span> Converging point method</h2>
+
+<p>
+Project progress is maintained here <a href="Progress.html">Progress</a>.
+Communication with professor and personal goals is maintained here <a href="Project_update.html">Project<sub>Updates</sub></a>.
+</p>
+<div id="outline-container-orge6af534" class="outline-2">
+<h2 id="orge6af534"><span class="section-number-2">1.</span> Converging point method</h2>
 <p>
 The method is beautifully explained in this website: <a href="https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html">https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html</a>.
 </p>
 </div>
-
-<div id="outline-container-orgdac1bbf" class="outline-2">
-<h2 id="orgdac1bbf"><span class="section-number-2">2.</span> Reading Paper:</h2>
-<div id="outline-container-orgf440315" class="outline-3">
-<h3 id="orgf440315"><span class="section-number-3">2.1.</span> 4. Membership determination:</h3>
+<div id="outline-container-org6282d34" class="outline-2">
+<h2 id="org6282d34"><span class="section-number-2">2.</span> Reading Paper:</h2>
+<div id="outline-container-org81abfec" class="outline-3">
+<h3 id="org81abfec"><span class="section-number-3">2.1.</span> <a href="Papers/Joshi_2020_MNRAS_492_3602.pdf">Photometric, kinematic, and variability study in the young open cluster NGC 1960</a> </h3>
+<div id="outline-container-org8fc16d8" class="outline-4">
+<h4 id="org8fc16d8"><span class="section-number-4">2.1.1.</span> Membership determination (Section 4):</h4>
 <p>
-Using Gaia DR2, data proper-motion is plotted as Vector Point Diagram (VPD). And the cluster members are assigned by chosing   stars which form a dense cluster of points in VPD.
+This section of the paper focuses on the determining the membership probability of a star in the image field, by assuming a few confirmed cluster members.
+In general an image will have stars from clusters and foreground as well as background.
+Using Gaia DR2, data proper-motion is plotted as Vector Point Diagram (VPD). And the cluster members are assigned by chosing stars which form a dense cluster of points in VPD.
 </p>
 <blockquote>
 <p>
-    The centre of the circular region confining the
+   <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> The centre of the circular region confining the
 probable cluster members was determined by maximum density
 method in the proper motion plane which is found to lie at (μx , μy )
 ≡ (μα cosθ, μδ ) ≈ (−0.13, −3.37) mas yr−1 .
@@ -275,8 +283,9 @@ was derived by plotting the stellar density as a function of radial
 distance in the proper motion plane as illustrated in Fig. 2. We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
 </p>
 </blockquote>
-<div id="outline-container-org5625097" class="outline-4">
-<h4 id="org5625097"><span class="section-number-4">2.1.1.</span> Membership probability</h4>
+<p>
+<b>Membership probability</b>  
+</p>
 <blockquote>
 <p>
 \[
@@ -289,7 +298,9 @@ P_\mu(i) = \frac{n_c \cdot \phi^v_c(i)}{n_c \cdot \phi^v_c(i) + n_f \cdot \phi^v
 
 <p>
 \[
-\phi^v_f(i) = \frac{1}{2\pi \sqrt{1 - \gamma^2} \sqrt{(\sigma_{xf}^2 + \epsilon_{xi}^2)(\sigma_{yf}^2 + \epsilon_{yi}^2)}} \exp\left\{ - \frac{1}{2(1 - \gamma^2)} \left[ \frac{(\mu_{xi} - \mu_{xf})^2}{\sigma_{xf}^2 + \epsilon_{xi}^2} - \frac{2\gamma (\mu_{xi} - \mu_{xf})(\mu_{yi} - \mu_{yf})}{\sqrt{(\sigma_{xf}^2 + \epsilon_{xi}^2)(\sigma_{yf}^2 + \epsilon_{yi}^2)}} - \frac{(\mu_{yi} - \mu_{yf})^2}{\sigma_{yf}^2 + \epsilon_{yi}^2} \right] \right\}
+\phi^v_f(i) = \frac{1}{2\pi \sqrt{1 - \gamma^2} \sqrt{(\sigma_{xf}^2 + \epsilon_{xi}^2)(\sigma_{yf}^2 + \epsilon_{yi}^2)}}
+\
+\exp\left\{ - \frac{1}{2(1 - \gamma^2)} \left[ \frac{(\mu_{xi} - \mu_{xf})^2}{\sigma_{xf}^2 + \epsilon_{xi}^2} - \frac{2\gamma (\mu_{xi} - \mu_{xf})(\mu_{yi} - \mu_{yf})}{\sqrt{(\sigma_{xf}^2 + \epsilon_{xi}^2)(\sigma_{yf}^2 + \epsilon_{yi}^2)}} - \frac{(\mu_{yi} - \mu_{yf})^2}{\sigma_{yf}^2 + \epsilon_{yi}^2} \right] \right\}
 \]
 </p>
 
@@ -300,9 +311,23 @@ P_\mu(i) = \frac{n_c \cdot \phi^v_c(i)}{n_c \cdot \phi^v_c(i) + n_f \cdot \phi^v
 \]
 </p>
 </blockquote>
+<p>
+<b>Parallax criteria on membership selection</b>
+By measuring the parallax of the stars, we further constrain the cluster members by eliminating all those stars whose parallax is 3&sigma; away from the mean cluster parallax, which is a gaussian. 
+</p>
 </div>
 </div>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Reffering to figure 1 in (Joshi et al. 2020). 
+</p></div></div>
+
+
 </div>
+</div></div>
 </body>
 </html>

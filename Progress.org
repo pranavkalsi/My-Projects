@@ -1,0 +1,28 @@
+#+title: Progress
+#+Author: Pranav Kalsi
+#+BIBLIOGRAPHY: Papers/biblio.bib
+#+Options: toc:nil
+Last updated: [2025-05-11 Sun]
+
+This file contains project progress including goals, todo items, problems and Questions.
+
+Relevant reading notes are maintained here [[file:Project_reading.org][Reading notes]].
+
+* First Goals:
+** DONE Understand Basics from the paper
+** TODO Replicate the results obtained in the paper?
+
+* Questions and Doubt:
+** Direclty related to the work
+** May deviate:
+*** TODO Radial profiles of star clusters in galaxies
+    The figure 2 in [cite:@joshi20_photom_kinem_variab_study_young].
+    #+BEGIN_QUOTE 
+    Figure 2. The radial distribution of stellar number density in the proper-
+motion plane. Here, dashed horizontal line indicates the field density and
+vertical dotted line represents the cut-off radius used to find the cluster
+members.
+
+We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
+#+END_QUOTE
+

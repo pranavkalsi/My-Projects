@@ -1,12 +1,15 @@
 #+title: Project Updates
 #+author:Pranav Kalsi
-#+Bibliography: biblio.bib
+#+Bibliography: Papers/biblio.bib
+#+OPTIONS: toc:nil
 This file contains updates about the project.
-The project is focused on using converging point method for analysing stellar clusters. To understand how does it work, consider reading the following page : https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html
+The project is focused on using converging point method for analysing stellar clusters.
 
-* Introduction: Converging point method
-* Hello world
-My test heading
+Project progress is maintained here [[file:Progress.org][Progress]].
+
+Relevant reading notes are maintained here [[file:Project_reading.org][Reading notes]].
+
+
 * Communication with professor Nirupam via email
 ** First email
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -44,9 +47,9 @@ Yogesh
 
 
 Here is the attached files:
-- Paper : [[file:Innitial steps/Joshi_2020_MNRAS_492_3602.pdf]]
-- Read me: [[file:Innitial steps/README.txt]]
-- DAT file: [[file:Innitial steps/catalog_NGC1960.dat]]
+- Paper: [[file:Papers/Joshi_2020_MNRAS_492_3602.pdf]] 
+- Read me: [[file:Data/catalog_NGC1960_header.txt]] 
+- DAT file: [[file:Data/catalog_NGC1960.dat]] 
 ** First goals [2025-05-08 Thu]
 After meeting with Prof Nirupam on april 25.04.2025,
 He explained me the overview of the project and things I need to do and Try.
@@ -59,17 +62,9 @@ Now, once the distance to the cluster is known using this method,
 now if we have converging point for n- number of stars belonging to the cluster, we can check weather other stars belong the same cluster or not.
 
 Here now I list the first things to do
-*** TODO Read the paper
+*** DONE Read relevant parts from the paper
+*** TODO Understand the expressions for membership probability 
 *** TODO Play with Gia Data
-*** TODO Create a framework for conveying updates about the project
-*** TODO Understand converging point method
+*** DONE Create a framework for conveying updates about the project
+*** DONE Understand converging point method
 
-** Next goals
-
-* Reading
-** Papers
-[cite:@joshi20_photom_kinem_variab_study_young]
-* HEading 2
-
-    
-* hello wpr

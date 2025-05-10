@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-11 Sun 02:48 -->
+<!-- 2025-05-11 Sun 02:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Welcome</title>
+<title>Project Updates</title>
 <meta name="author" content="Pranav Kalsi" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -196,22 +196,123 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Welcome</h1>
+<h1 class="title">Project Updates</h1>
 <p>
-This page acts as a navigator to various links relevent to my project:
+This file contains updates about the project.
+The project is focused on using converging point method for analysing stellar clusters.
 </p>
 
 <p>
-Here are few links to projects:
+Project progress is maintained here <a href="Progress.html">Progress</a>.
 </p>
 
-<div id="outline-container-org2558518" class="outline-2">
-<h2 id="org2558518"><span class="section-number-2">1.</span> Kinematic distance estimation or membership of stars in clusters using GAIA data</h2>
+<p>
+Relevant reading notes are maintained here <a href="Project_reading.html">Reading notes</a>.
+</p>
+
+
+<div id="outline-container-org7abbc0e" class="outline-2">
+<h2 id="org7abbc0e"><span class="section-number-2">1.</span> Communication with professor Nirupam via email</h2>
+<div id="outline-container-org10605a2" class="outline-3">
+<h3 id="org10605a2"><span class="section-number-3">1.1.</span> First email</h3>
+<hr />
+<p>
+On 17/04/25 09:59, nroy@iisc.ac.in wrote:
+Hi Yogesh ji,
+</p>
+
+<p>
+We had some discussion during the ASI meeting on the Gaia star cluster data and improving distance estimation/member identification based on proper motion/radial velocity and applying convergent point method. There is a student at IISc who is asking me for a short summer project, and I was thinking that it could be one of the possible projects for him to explore.
+</p>
+
+<p>
+Will it be possible for you to share data for one or two of the clusters where I can try this method? If it works satisfactorily, I can ask this student to take it up as a short summer project for a sample of clusters.
+</p>
+
+<p>
+Best regards,
+Nirupam
+</p>
+
+<hr />
+<p>
+From: yogesh &lt;yogesh@aries.res.in&gt;
+Sent: Thursday, April 17, 2025 11:46 AM
+To: Nirupam Roy &lt;nroy@iisc.ac.in&gt;
+Subject: Re: Gaia star cluster data
+</p>
+
+<p>
+External Email
+</p>
+
+<p>
+Hi Nirupam,
+</p>
+
+
+
+<p>
+Please find attached the catalog for the open cluster NGC 1960, which includes proper motion data for the stars obtained from the GAIA archive. The package contains both the data file and a README file that details the parameters and column descriptions. I have also included the corresponding research paper for your reference. If the student is interested in using radial velocity (RV) information for these stars, it can be retrieved directly from the GAIA website by providing the cluster’s central coordinates and cluster radius. Note, photometric magnitudes for the cluster stars are taken from 1-m ARIES telescope and infrared from 2MASS.
+</p>
+
+
+
+<p>
+Let me know if you need any additional information.
+</p>
+
+<p>
+Thanks and regards
+Yogesh
+</p>
+<hr />
+
+
+<p>
+Here is the attached files:
+</p>
 <ul class="org-ul">
-<li>Project progress is maintained here <a href="Progress.html">Progress</a>.</li>
-<li>Relevant reading notes are maintained here <a href="Project_reading.html">Reading notes</a>.</li>
-<li>Communication with professor and personal goals is maintained here <a href="Project_update.html">Project<sub>Updates</sub></a>.</li>
+<li>Paper: <a href="Papers/Joshi_2020_MNRAS_492_3602.pdf">Papers/Joshi_2020_MNRAS_492_3602.pdf</a></li>
+<li>Read me: <a href="Data/catalog_NGC1960_header.txt">Data/catalog_NGC1960_header.txt</a></li>
+<li>DAT file: <a href="Data/catalog_NGC1960.dat">Data/catalog_NGC1960.dat</a></li>
 </ul>
+</div>
+<div id="outline-container-org6751278" class="outline-3">
+<h3 id="org6751278"><span class="section-number-3">1.2.</span> First goals <span class="timestamp-wrapper"><span class="timestamp">[2025-05-08 Thu]</span></span></h3>
+<p>
+After meeting with Prof Nirupam on april 25.04.2025,
+He explained me the overview of the project and things I need to do and Try.
+Here I list the current goals of the project as I understand as of now.
+</p>
+
+<p>
+Coverging point method relies of measuring proper motion of the stars belonging to a specific cluster, which gives their radial velocity and the direction in the sky. If the stars belong to the same cluster, they tend to move towards a converging point, determining that gives us the velocity, (net velocity vector) if the distance to the cluster is known.
+One can now reverse the problem, If we somehow know the radial velocity from the propermotion, and tangentail velocity from the spectral analysis of the star light, can we determine the distance known the converging point,
+the answer is yes! we certainly can know the distance.
+Now, once the distance to the cluster is known using this method,
+now if we have converging point for n- number of stars belonging to the cluster, we can check weather other stars belong the same cluster or not.
+</p>
+
+<p>
+Here now I list the first things to do
+</p>
+<div id="outline-container-org89f17db" class="outline-4">
+<h4 id="org89f17db"><span class="section-number-4">1.2.1.</span> <span class="done DONE">DONE</span> Read relevant parts from the paper</h4>
+</div>
+<div id="outline-container-org30da4da" class="outline-4">
+<h4 id="org30da4da"><span class="section-number-4">1.2.2.</span> <span class="todo TODO">TODO</span> Understand the expressions for membership probability</h4>
+</div>
+<div id="outline-container-org69f167d" class="outline-4">
+<h4 id="org69f167d"><span class="section-number-4">1.2.3.</span> <span class="todo TODO">TODO</span> Play with Gia Data</h4>
+</div>
+<div id="outline-container-org772cfce" class="outline-4">
+<h4 id="org772cfce"><span class="section-number-4">1.2.4.</span> <span class="done DONE">DONE</span> Create a framework for conveying updates about the project</h4>
+</div>
+<div id="outline-container-org774bcc4" class="outline-4">
+<h4 id="org774bcc4"><span class="section-number-4">1.2.5.</span> <span class="done DONE">DONE</span> Understand converging point method</h4>
+</div>
+</div>
 </div>
 </div>
 </body>

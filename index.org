@@ -1,0 +1,12 @@
+#+TITLE: Welcome
+#+AUTHOR: Pranav Kalsi
+#+OPTIONS: toc:nil
+This page acts as a navigator to various links relevent to my project:
+
+Here are few links to projects:
+
+* Kinematic distance estimation or membership of stars in clusters using GAIA data
+
++ Project progress is maintained here [[file:Progress.org][Progress]].
++ Relevant reading notes are maintained here [[file:Project_reading.org][Reading notes]].
++ Communication with professor and personal goals is maintained here [[file:Project_update.org][Project_Updates]].
