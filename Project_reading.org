@@ -7,7 +7,9 @@ This file contains the important and relevant things from the reading resources 
 Project progress is maintained here [[file:Progress.org][Progress]].
 Communication with professor and personal goals is maintained here [[file:Project_update.org][Project_Updates]].
 * Converging point method
-The method is beautifully explained in this website: https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html.
+The method is beautifully explained in this website:  https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html.
+
+The local webpage can be found here [[file:Distance to the Hyades Star Cluster.html]].
 * Reading Paper:
 ** [[file:Papers/Joshi_2020_MNRAS_492_3602.pdf][Photometric, kinematic, and variability study in the young open cluster NGC 1960]] [cite:@joshi20_photom_kinem_variab_study_young] 
 *** Membership determination (Section 4):
