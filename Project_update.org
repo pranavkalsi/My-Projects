@@ -1,0 +1,75 @@
+#+title: Project Updates
+#+author:Pranav Kalsi
+#+Bibliography: biblio.bib
+This file contains updates about the project.
+The project is focused on using converging point method for analysing stellar clusters. To understand how does it work, consider reading the following page : https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html
+
+* Introduction: Converging point method
+* Hello world
+My test heading
+* Communication with professor Nirupam via email
+** First email
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+On 17/04/25 09:59, nroy@iisc.ac.in wrote:
+Hi Yogesh ji,
+
+We had some discussion during the ASI meeting on the Gaia star cluster data and improving distance estimation/member identification based on proper motion/radial velocity and applying convergent point method. There is a student at IISc who is asking me for a short summer project, and I was thinking that it could be one of the possible projects for him to explore.
+
+Will it be possible for you to share data for one or two of the clusters where I can try this method? If it works satisfactorily, I can ask this student to take it up as a short summer project for a sample of clusters.
+
+Best regards,
+Nirupam
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+From: yogesh <yogesh@aries.res.in>
+Sent: Thursday, April 17, 2025 11:46 AM
+To: Nirupam Roy <nroy@iisc.ac.in>
+Subject: Re: Gaia star cluster data
+
+External Email
+
+Hi Nirupam,
+
+
+
+Please find attached the catalog for the open cluster NGC 1960, which includes proper motion data for the stars obtained from the GAIA archive. The package contains both the data file and a README file that details the parameters and column descriptions. I have also included the corresponding research paper for your reference. If the student is interested in using radial velocity (RV) information for these stars, it can be retrieved directly from the GAIA website by providing the cluster’s central coordinates and cluster radius. Note, photometric magnitudes for the cluster stars are taken from 1-m ARIES telescope and infrared from 2MASS.
+
+
+
+Let me know if you need any additional information.
+
+Thanks and regards
+Yogesh
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Here is the attached files:
+- Paper : [[file:Innitial steps/Joshi_2020_MNRAS_492_3602.pdf]]
+- Read me: [[file:Innitial steps/README.txt]]
+- DAT file: [[file:Innitial steps/catalog_NGC1960.dat]]
+** First goals [2025-05-08 Thu]
+After meeting with Prof Nirupam on april 25.04.2025,
+He explained me the overview of the project and things I need to do and Try.
+Here I list the current goals of the project as I understand as of now.
+
+Coverging point method relies of measuring proper motion of the stars belonging to a specific cluster, which gives their radial velocity and the direction in the sky. If the stars belong to the same cluster, they tend to move towards a converging point, determining that gives us the velocity, (net velocity vector) if the distance to the cluster is known.
+One can now reverse the problem, If we somehow know the radial velocity from the propermotion, and tangentail velocity from the spectral analysis of the star light, can we determine the distance known the converging point,
+the answer is yes! we certainly can know the distance.
+Now, once the distance to the cluster is known using this method,
+now if we have converging point for n- number of stars belonging to the cluster, we can check weather other stars belong the same cluster or not.
+
+Here now I list the first things to do
+*** TODO Read the paper
+*** TODO Play with Gia Data
+*** TODO Create a framework for conveying updates about the project
+*** TODO Understand converging point method
+
+** Next goals
+
+* Reading
+** Papers
+[cite:@joshi20_photom_kinem_variab_study_young]
+* HEading 2
+
+    
+* hello wpr
