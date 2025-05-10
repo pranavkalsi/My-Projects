@@ -1,0 +1,75 @@
+% Created 2025-05-10 Sat 18:22
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Pranav Kalsi}
+\date{\today}
+\title{Project Reading}
+\hypersetup{
+ pdfauthor={Pranav Kalsi},
+ pdftitle={Project Reading},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\usepackage{biblatex}
+\addbibresource{/home/ega-ninja/Projects/Gaia_converging point/biblio.bib}
+\addbibresource{~/exocortex/bibliography.bib}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+This file contains the important and relevant things from the reading resources for the project. It also contains doubts which are unresolved.
+Last edited: \textit{[2025-05-10 Sat] } 
+\section{Converging point method}
+\label{sec:orged6e051}
+The method is beautifully explained in this website: \url{https://physics.weber.edu/palen/clearinghouse/labs/hyades/disthyad.html}.
+
+\section{Reading Paper:}
+\label{sec:org08af745}
+
+\subsection{4. Membership determination:}
+\label{sec:org21eb5b5}
+Using Gaia DR2, data proper-motion is plotted as Vector Point Diagram (VPD). And the cluster members are assigned by chosing   stars which form a dense cluster of points in VPD.
+\begin{quote}
+    The centre of the circular region confining the
+probable cluster members was determined by maximum density
+method in the proper motion plane which is found to lie at (μx , μy )
+≡ (μα cosθ, μδ ) ≈ (−0.13, −3.37) mas yr−1 .
+The radius of the circle
+was derived by plotting the stellar density as a function of radial
+distance in the proper motion plane as illustrated in Fig. 2. We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
+\end{quote}
+\subsubsection{Membership probability}
+\label{sec:org7183102}
+\begin{quote}
+\[
+P_\mu(i) = \frac{n_c \cdot \phi^v_c(i)}{n_c \cdot \phi^v_c(i) + n_f \cdot \phi^v_f(i)}
+\]
+\[
+\phi^v_c(i) = \frac{1}{2\pi \sqrt{(\sigma_{xc}^2 + \epsilon_{xi}^2)(\sigma_{yc}^2 + \epsilon_{yi}^2)}} \exp\left\{ - \frac{1}{2} \left[ \frac{(\mu_{xi} - \mu_{xc})^2}{\sigma_{xc}^2 + \epsilon_{xi}^2} + \frac{(\mu_{yi} - \mu_{yc})^2}{\sigma_{yc}^2 + \epsilon_{yi}^2} \right] \right\}
+\]
+
+\[
+\phi^v_f(i) = \frac{1}{2\pi \sqrt{1 - \gamma^2} \sqrt{(\sigma_{xf}^2 + \epsilon_{xi}^2)(\sigma_{yf}^2 + \epsilon_{yi}^2)}}
+\
+\exp\left\{ - \frac{1}{2(1 - \gamma^2)} \left[ \frac{(\mu_{xi} - \mu_{xf})^2}{\sigma_{xf}^2 + \epsilon_{xi}^2} - \frac{2\gamma (\mu_{xi} - \mu_{xf})(\mu_{yi} - \mu_{yf})}{\sqrt{(\sigma_{xf}^2 + \epsilon_{xi}^2)(\sigma_{yf}^2 + \epsilon_{yi}^2)}} - \frac{(\mu_{yi} - \mu_{yf})^2}{\sigma_{yf}^2 + \epsilon_{yi}^2} \right] \right\}
+\]
+
+
+\[
+\gamma = \frac{(\mu_{xi} - \mu_{xf})(\mu_{yi} - \mu_{yf})}{\sigma_{xf} \sigma_{yf}}
+\]
+\end{quote}
+\end{document}
