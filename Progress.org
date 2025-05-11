@@ -11,8 +11,11 @@ Relevant reading notes are maintained here [[file:Project_reading.org][Reading n
 * First Goals:
 ** DONE Understand Basics from the paper
 ** CANCELLED Replicate the results obtained in the paper?
-** TODO Check if the data file has data of all the stars which are cluster members.
-
+** STARTED Check if the data file has data of all the stars which are cluster members.
+The Data was imported as a python dataframe, there were total 3960 stars. The jupyter file can be found here:
+[[file:NGC_1960.html]] 
+The Vector-point Diagram for propermotion was zoomed and displayed as in [cite:@joshi20_photom_kinem_variab_study_young].
+[[file:Data/Figure 1_replicated.png]]
 * Questions and Doubt:
 ** Direclty related to the work
 ** May deviate:
