@@ -67,4 +67,26 @@ Here now I list the first things to do
 *** TODO Play with Gia Data
 *** DONE Create a framework for conveying updates about the project
 *** DONE Understand converging point method
+** Email response [2025-05-11 Sun]
+Dear sir,
 
+I looked at the data, and I also read relevant parts of the paper.
+
+As we discussed in previous meeting, I have created an HTML file to have a track of progress I make on the project. Link to the same is here  https://pranavkalsi.github.io/My-Projects/Progress.html.
+
+The .dat file also contains the membership probabilities of the stars in the image field,
+Now what should I aim next, trying to replicate the same as in paper to see if I get the same numbers for membership probabilities?
+
+Thank-you
+Regards,
+Pranav
+--------------------------------------------------------------------------------------------------------------
+Dear Pranav,
+
+Thanks for the updates. I think the first step will be to check if have the proper motion and the radial velocity data for all the stars that have been marked as the member. You will need to check the Gaia website for the radial velocity information.
+
+Once we have that, next step will be to estimate the distance using that, and check if that matches with other independent distance estimation.
+
+best,
+Nirupam
+--------------------------------------------------------------------------------------------------------------
