@@ -10,7 +10,8 @@ Relevant reading notes are maintained here [[file:Project_reading.org][Reading n
 
 * First Goals:
 ** DONE Understand Basics from the paper
-** TODO Replicate the results obtained in the paper?
+** CANCELLED Replicate the results obtained in the paper?
+** TODO Check if the data file has data of all the stars which are cluster members.
 
 * Questions and Doubt:
 ** Direclty related to the work
