@@ -67,4 +67,4 @@ Here now I list the first things to do
 *** TODO Play with Gia Data
 *** DONE Create a framework for conveying updates about the project
 *** DONE Understand converging point method
-
+** Email response [2025-05-11 Sun]
