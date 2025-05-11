@@ -68,6 +68,7 @@ Here now I list the first things to do
 *** DONE Create a framework for conveying updates about the project
 *** DONE Understand converging point method
 ** Email response [2025-05-11 Sun]
+<<<<<<< HEAD
 Dear sir,
 
 I looked at the data, and I also read relevant parts of the paper.
@@ -90,3 +91,5 @@ Once we have that, next step will be to estimate the distance using that, and ch
 best,
 Nirupam
 --------------------------------------------------------------------------------------------------------------
+=======
+>>>>>>> origin/main
