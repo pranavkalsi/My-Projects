@@ -1,0 +1,20 @@
+The following querry was given to extract this data from 
+GAIA-DR2
+
+
+SELECT TOP 4000 gaia_source.source_id,gaia_source.ra,gaia_source.ra_error,gaia_source.dec,gaia_source.dec_error,gaia_source.parallax,gaia_source.parallax_error,gaia_source.phot_g_mean_mag,gaia_source.bp_rp,gaia_source.radial_velocity,gaia_source.radial_velocity_error,gaia_source.phot_variable_flag,gaia_source.teff_val,gaia_source.a_g_val,'NGC1960' AS target_id,84.084 AS target_ra,34.135 AS target_dec,.8350 AS target_parallax,-.1550 AS target_pm_ra,-3.3880 AS target_pm_dec,7.0300 AS target_radial_velocity,2000 AS epoch,
+DISTANCE(POINT('ICRS' , gaiadr2.gaia_source.ra, gaiadr2.gaia_source.dec), 
+POINT('ICRS',
+				COORD1(EPOCH_PROP_POS(84.084, 34.135, .8350, -.1550, -3.3880, 7.0300, 2000, 2015.5)),
+				COORD2(EPOCH_PROP_POS(84.084, 34.135, .8350, -.1550, -3.3880, 7.0300, 2000, 2015.5)))) AS "target_separation (deg)"
+FROM gaiadr2.gaia_source 
+WHERE 
+CONTAINS(
+	POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),
+	CIRCLE(
+		'ICRS',
+		COORD1(EPOCH_PROP_POS(84.084,34.135,.8350,-.1550,-3.3880,7.0300,2000,2015.5)),
+		COORD2(EPOCH_PROP_POS(84.084,34.135,.8350,-.1550,-3.3880,7.0300,2000,2015.5)),
+		0.2415)
+)=1 ORDER BY target_id, "target_separation (deg)"
+
