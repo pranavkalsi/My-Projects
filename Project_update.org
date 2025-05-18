@@ -93,3 +93,38 @@ Nirupam
 --------------------------------------------------------------------------------------------------------------
 =======
 >>>>>>>origin/main
+** Email Response [2025-05-18 Sun]
+​----------------------------------------------------------------------
+​Dear Sir,
+
+I downloaded the data from GAIA-DR3, the .dat file shared was presumably from GIA-DR2 as mentioned in the paper. To my surprize the proper motion values don't match for majority of the stars, but they are close. I believe using DR3 is better as it is more precise. But the radial velocity information was only available for 285 out of 9320 objects in the region identified by GAIA, and I doubt if they are member of cluster or not.
+
+In the paper, based on density of points in VPD of proper motion velocity there were around 462 stars as a member, and from the data I could visually filter round the stars ~400 from the dense VPD diagram, which when plotted with their ra-dec coordinates are present all over the region, not clustered around the centre.
+Also, the stars with radial velocity data from GAIA-DR3 are also present all over the region. So we can suppose that some of them are actually cluster members. But filtering them first by velocity VPD method will leave us only handful of stars with radial velocity data.
+
+How should I proceed?
+
+P.S.
+I am updating the plots and progress side by side on the link I sent earlier.
+
+Thank-you
+Regards,
+Pranav
+---------------------------------------------------------------------
+Nirupam Roy
+​
+​
+Dear Pranav,
+
+For the method of distance estimation, we do not need v_r for individual stars, rather a mean radial velocity goes into the calculation. So, for initial testing, the steps can be:
+
+Identify cluster members
+Take their proper motion vectors to get the convergent point
+Take the ones that have v_r, and take a mean of v_r from that
+Use these to calculate the distance
+Cross-check if the mean v_r matches with estimation of the cluster radial velocity in literature
+Cross-check if the estimated distance is consistent with values reported in literature from other independent methods of distance estimation.
+
+best,
+Nirupam
+------------------------------------------------------------------
