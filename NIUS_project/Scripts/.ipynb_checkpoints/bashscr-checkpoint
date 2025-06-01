@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Step 1: Take inputs
+read -p "Enter the number of frequency channels needed: " n_chan
+read -p "Enter the list of required number of subints (space-separated): " subints_list
+read -p "Enter the path of the PSRFITS file: " psrfits_file
+
+# Step 2: Prepare required files
+pam --setnchn $n_chan -e "{$n_chan}tt" psrfits_file
+for subint in $subints_list; do
+    # Construct output file name
+    output_file="${num_channels}ch_${subint}subints"
+
+    # Crunch frequency channels
+    #pam -c $num_channels $psrfits_file -o temp.fits
+
+    # Crunch subintegrations
+    #psrshrink -n $subint temp.fits -o $output_file
+    pam --setnsub $subint psrfits_file -o $output_file
+    # Remove temporary file
+    #rm temp.fits
+done
+
+# Step 3: Prepare template profile
+psrsmooth -ask -o template_profile.fits
+
+# Step 4: Generate .tim files
+for subint in $subints_list; do
+    # Construct output file name
+    tim_file="${num_channels}ch_${subint}subints.tim"
+
+    # Generate .tim file
+    pat -A -s template_profile.fits -f $subint -o $tim_file
+done
+
+# Step 5: Save commands to a text file
+commands_file="commands_executed.txt"
+echo "Commands Executed:" > $commands_file
+echo "psrunchan -c $num_channels $psrfits_file" >> $commands_file
+echo "psrshrink -n <number_of_subints> temp.fits -o <output_file>" >> $commands_file
+echo "psrsmooth -ask -o template_profile.fits" >> $commands_file
+echo "pat -A -s template_profile.fits -f <number_of_subints> -o <output_file>" >> $commands_file
+
+echo "Script executed successfully! Results saved in the current directory."
+
