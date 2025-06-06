@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-13 Tue 04:59 -->
+<!-- 2025-06-06 Fri 06:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Progress</title>
@@ -198,7 +198,7 @@
 <div id="content" class="content">
 <h1 class="title">Progress</h1>
 <p>
-Last updated: <span class="timestamp-wrapper"><span class="timestamp">[2025-05-13 Tue] </span></span> 
+Last updated:<span class="timestamp-wrapper"><span class="timestamp">[2025-06-06 Fri]</span></span>
 </p>
 
 <p>
@@ -209,16 +209,16 @@ This file contains project progress including goals, todo items, problems and Qu
 Relevant reading notes are maintained here <a href="Project_reading.html">Reading notes</a>.
 </p>
 
-<div id="outline-container-org75dd50b" class="outline-2">
-<h2 id="org75dd50b"><span class="section-number-2">1.</span> First Goals:</h2>
-<div id="outline-container-org5429c60" class="outline-3">
-<h3 id="org5429c60"><span class="section-number-3">1.1.</span> <span class="done DONE">DONE</span> Understand Basics from the paper</h3>
+<div id="outline-container-org8fa69c5" class="outline-2">
+<h2 id="org8fa69c5"><span class="section-number-2">1.</span> First Goals:</h2>
+<div id="outline-container-org4ebf87b" class="outline-3">
+<h3 id="org4ebf87b"><span class="section-number-3">1.1.</span> <span class="done DONE">DONE</span> Understand Basics from the paper</h3>
 </div>
-<div id="outline-container-org5225e18" class="outline-3">
-<h3 id="org5225e18"><span class="section-number-3">1.2.</span> <span class="done CANCELLED">CANCELLED</span> Replicate the results obtained in the paper?</h3>
+<div id="outline-container-org9392e61" class="outline-3">
+<h3 id="org9392e61"><span class="section-number-3">1.2.</span> <span class="done CANCELLED">CANCELLED</span> Replicate the results obtained in the paper?</h3>
 </div>
-<div id="outline-container-orgba1a320" class="outline-3">
-<h3 id="orgba1a320"><span class="section-number-3">1.3.</span> <span class="todo STARTED">STARTED</span> Check if the data file has data of all the stars which are cluster members.</h3>
+<div id="outline-container-org96bbd39" class="outline-3">
+<h3 id="org96bbd39"><span class="section-number-3">1.3.</span> <span class="done DONE">DONE</span> Check if the data file has data of all the stars which are cluster members.</h3>
 <p>
 The Data was imported as a python dataframe, there were total 3960 stars. The jupyter file can be found here:
 <a href="NGC_1960.html">NGC_1960.html</a> 
@@ -226,22 +226,30 @@ The Vector-point Diagram for propermotion was zoomed and displayed as in (Joshi 
 <img src="Data/Figure 1_replicated.png" alt="Figure 1_replicated.png" />
 </p>
 </div>
+<div id="outline-container-orge5355a4" class="outline-3">
+<h3 id="orge5355a4"><span class="section-number-3">1.4.</span> Steps to follow:</h3>
+<div id="outline-container-org654bc8d" class="outline-4">
+<h4 id="org654bc8d"><span class="section-number-4">1.4.1.</span> <span class="todo TODO">TODO</span> Identify Cluster members:</h4>
+<p>
+I have successfully estimated the cluster centre by using kernel density estimation method,
+But finding it tricky to determine the cluster radius
+which distribution to fit with the data etc.
+</p>
 </div>
-<div id="outline-container-orgc1a1a5e" class="outline-2">
-<h2 id="orgc1a1a5e"><span class="section-number-2">2.</span> Questions, Problems and Doubts:</h2>
-<div id="outline-container-org23a5a90" class="outline-3">
-<h3 id="org23a5a90"><span class="section-number-3">2.1.</span> Direclty related to the work</h3>
-<div id="outline-container-orga0b50e1" class="outline-4">
-<h4 id="orga0b50e1"><span class="section-number-4">2.1.1.</span> <span class="todo TODO">TODO</span> GIA-DR3 has only handful of stars/sources with non-nan Radial velocity</h4>
+</div>
+</div>
+<div id="outline-container-org8384f6e" class="outline-2">
+<h2 id="org8384f6e"><span class="section-number-2">2.</span> Questions, Problems and Doubts:</h2>
+<div id="outline-container-org1d5d336" class="outline-3">
+<h3 id="org1d5d336"><span class="section-number-3">2.1.</span> Direclty related to the work</h3>
+<div id="outline-container-orgc5bae5a" class="outline-4">
+<h4 id="orgc5bae5a"><span class="section-number-4">2.1.1.</span> <span class="done DONE">DONE</span> GIA-DR3 has only handful of stars/sources with non-nan Radial velocity</h4>
 <p>
 Out of a search query of 10000 sources in a radius of 14.49 arc-min around centre co-ordinates of NGC 1960, there were 9320 for which GIA data was available out of which only <b>285</b> had non-nan radial velocity data.
 </p>
 </div>
-</div>
-<div id="outline-container-orgb223cdf" class="outline-3">
-<h3 id="orgb223cdf"><span class="section-number-3">2.2.</span> May deviate:</h3>
-<div id="outline-container-org6d37f54" class="outline-4">
-<h4 id="org6d37f54"><span class="section-number-4">2.2.1.</span> <span class="todo TODO">TODO</span> Radial profiles of star clusters in galaxies</h4>
+<div id="outline-container-org9cc42b4" class="outline-4">
+<h4 id="org9cc42b4"><span class="section-number-4">2.1.2.</span> <span class="todo TODO">TODO</span> Radial profiles of star clusters in galaxies similar profile of stars in cluster.</h4>
 <p>
 The figure 2 in (Joshi et al. 2020).
 </p>
@@ -251,13 +259,20 @@ The figure 2 in (Joshi et al. 2020).
 motion plane. Here, dashed horizontal line indicates the field density and
 vertical dotted line represents the cut-off radius used to find the cluster
 members.
-</p>
-
-<p>
 We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
 </p>
 </blockquote>
+
+<p>
+ Here is a plot of density distribution of stars as a function of radius in proper motion space.
+<img src="Data/Figure 8.png" alt="Figure 8.png" />
+What curve should I fit to the data,
+Already tried king&rsquo;s distribution, exponential, but they do not seem to fit satisfactorily.
+</p>
 </div>
+</div>
+<div id="outline-container-org9cd9ea6" class="outline-3">
+<h3 id="org9cd9ea6"><span class="section-number-3">2.2.</span> May deviate:</h3>
 </div>
 </div>
 </div>

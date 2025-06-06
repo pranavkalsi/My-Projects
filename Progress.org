@@ -2,7 +2,7 @@
 #+Author: Pranav Kalsi
 #+BIBLIOGRAPHY: Papers/biblio.bib
 #+Options: toc:nil
-Last updated: [2025-05-13 Tue] 
+Last updated:[2025-06-06 Fri]
 
 This file contains project progress including goals, todo items, problems and Questions.
 
@@ -11,24 +11,32 @@ Relevant reading notes are maintained here [[file:Project_reading.org][Reading n
 * First Goals:
 ** DONE Understand Basics from the paper
 ** CANCELLED Replicate the results obtained in the paper?
-** STARTED Check if the data file has data of all the stars which are cluster members.
+** DONE Check if the data file has data of all the stars which are cluster members.
 The Data was imported as a python dataframe, there were total 3960 stars. The jupyter file can be found here:
 [[file:NGC_1960.html]] 
 The Vector-point Diagram for propermotion was zoomed and displayed as in [cite:@joshi20_photom_kinem_variab_study_young].
 [[file:Data/Figure 1_replicated.png]]
+** Steps to follow:
+*** TODO Identify Cluster members:
+I have successfully estimated the cluster centre by using kernel density estimation method,
+But finding it tricky to determine the cluster radius
+which distribution to fit with the data etc.
 * Questions, Problems and Doubts:
 ** Direclty related to the work
-*** TODO GIA-DR3 has only handful of stars/sources with non-nan Radial velocity 
+*** DONE GIA-DR3 has only handful of stars/sources with non-nan Radial velocity
 Out of a search query of 10000 sources in a radius of 14.49 arc-min around centre co-ordinates of NGC 1960, there were 9320 for which GIA data was available out of which only *285* had non-nan radial velocity data.
-** May deviate:
-*** TODO Radial profiles of star clusters in galaxies
+*** TODO Radial profiles of star clusters in galaxies similar profile of stars in cluster.
     The figure 2 in [cite:@joshi20_photom_kinem_variab_study_young].
-    #+BEGIN_QUOTE 
+    #+BEGIN_QUOTE
     Figure 2. The radial distribution of stellar number density in the proper-
 motion plane. Here, dashed horizontal line indicates the field density and
 vertical dotted line represents the cut-off radius used to find the cluster
 members.
-
 We fit the stellar density profile with a function similar to the one used to characterize the radial profiles of star clusters in the galaxies.
 #+END_QUOTE
 
+    Here is a plot of density distribution of stars as a function of radius in proper motion space.
+   [[file:Data/Figure 8.png]]
+   What curve should I fit to the data,
+   Already tried king's distribution, exponential, but they do not seem to fit satisfactorily.
+** May deviate:
